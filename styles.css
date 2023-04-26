@@ -132,6 +132,19 @@ header .foto_header {
     }       
 }
 
+#aprendizaje{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+}
+
+#aprendizaje article:first-child{
+    grid-column: 1fr;
+    text-align: center;
+    justify-content: center;
+    margin: 10%;
+}
+
 @media (max-width: 1150px) {
     .checkbtn {
         display: flex;
