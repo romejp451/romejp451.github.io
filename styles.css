@@ -91,6 +91,11 @@ header .foto_header {
     justify-content: center;
     align-items: center;
     color: white;
+    text-align: left;
+}
+
+#inicio .descripcion p{
+    margin-top: 5%;
 }
 
 #inicio .imagen{
@@ -107,6 +112,10 @@ header .foto_header {
     margin-top: 10%;
     animation: bounce 2s infinite;
     transform: scale(1.2);
+}
+
+#wave{
+    margin-top: -5%;
 }
     
 @keyframes bounce {
