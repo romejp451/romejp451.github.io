@@ -121,6 +121,7 @@ header .foto_header {
 #aprendizaje{
     margin-top: 4%;
     text-align: center;
+    margin: auto;
     width: 80%;
     -webkit-box-shadow: 0px 10px 48px 13px rgba(156, 156, 156, 0.83);
     -moz-box-shadow: 0px 10px 48px 13px rgba(156, 156, 156, 0.83);
@@ -129,11 +130,12 @@ header .foto_header {
 }
 
 #aprendizaje h2{
-    margin-top: 10%;
+    padding-top: 5%;
+    font-size: 2em;
 }
 
 #aprendizaje article{
-    margin: 10%;
+    margin: 5%;
     font-size: 1.2em;
     text-align: center;
     padding: 2%;
