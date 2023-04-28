@@ -117,47 +117,41 @@ header .foto_header {
 #wave{
     margin-top: -5%;
 }
-    
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    
-    50% {
-        transform: translateY(-10px);
-    }
-    
-    100% {
-        transform: translateY(0);
-    }       
-}
 
 #aprendizaje{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin-top: 4%;
+    text-align: center;
+    width: 80%;
+    -webkit-box-shadow: 0px 10px 48px 13px rgba(156, 156, 156, 0.83);
+    -moz-box-shadow: 0px 10px 48px 13px rgba(156, 156, 156, 0.83);
+    box-shadow: 0px 10px 48px 13px rgba(156, 156, 156, 0.83);
+    background-color: white;
+}
+
+#aprendizaje h2{
     margin-top: 10%;
 }
 
-#aprendizaje article:first-child{
-    grid-column: 1fr;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+#aprendizaje article{
     margin: 10%;
     font-size: 1.2em;
-}
-
-#aprendizaje article:last-child{
-    grid-column: 1fr;
     text-align: center;
+    padding: 2%;
 }
 
-#aprendizaje img{
+#aprendizaje ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+#aprendizaje article img {
     transition: 1s ease;
 }
 
-#aprendizaje img:hover{
-    filter: drop-shadow(20px 5px 5px #003A6B);
+#aprendizaje article img:hover{
+    filter: drop-shadow(8px 6px 4px #003A6B);
     transition: 1s ease;
 }
 
