@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -12,17 +11,21 @@ body {
     background-color: #E7EDEB;
 }
 
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
 nav {
     background-color: #003A6B;
-    width: 100%;
-    height: 8%;
     display: flex;
     flex-direction: row;
 }
 
 nav img {
     width: 6%;
-    height: 6%;
+
     border-radius: 50%;
     padding: 1%;
 }
@@ -82,6 +85,7 @@ header .foto_header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #003A6B;
+    padding-top: 5%;
 }
 
 #inicio .descripcion{
@@ -110,8 +114,19 @@ header .foto_header {
 #inicio img{
     width: 50%;
     margin-top: 10%;
-    animation: bounce 2s infinite;
+    animation: bounce 3s infinite;
     transform: scale(1.2);
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 #wave{
@@ -127,6 +142,7 @@ header .foto_header {
     -moz-box-shadow: 0px 10px 48px 13px rgba(156, 156, 156, 0.83);
     box-shadow: 0px 10px 48px 13px rgba(156, 156, 156, 0.83);
     background-color: white;
+    border-radius: 5%;
 }
 
 #aprendizaje h2{
@@ -153,8 +169,45 @@ header .foto_header {
 }
 
 #aprendizaje article img:hover{
-    filter: drop-shadow(8px 6px 4px #003A6B);
     transition: 1s ease;
+    filter: drop-shadow(8px 6px 4px #003A6B);
+}
+
+#ambiciones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#ambiciones button{
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content;
+    margin-top: 2%;
+}
+
+#ambiciones button span{
+    background-color: black;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+#ambiciones button:hover span{
+    background: none;
+}
+
+#ambiciones button:active{
+    transform: scale(0.9);
 }
 
 @media (max-width: 1150px) {
