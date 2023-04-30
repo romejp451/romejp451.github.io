@@ -200,6 +200,7 @@ header .foto_header {
     padding: 16px 24px;
     border-radius: 6px;
     transition: .3s;
+    text-transform: uppercase;
 }
 
 #ambiciones button:hover span{
@@ -208,6 +209,23 @@ header .foto_header {
 
 #ambiciones button:active{
     transform: scale(0.9);
+    display: flex;
+    flex-direction: row;
+}
+
+#ambiciones article{
+    text-align: center;
+    font-size: 2em;
+    font-family: Manjari;
+    font-weight: bold;
+    margin: 2%;
+    padding: 5%;
+    display: none;
+}
+
+#ambiciones article img{
+    width: 25%;
+    margin-top: 2%;
 }
 
 @media (max-width: 1150px) {

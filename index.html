@@ -72,11 +72,27 @@
             </article>
         </section>
         <section id="ambiciones">
-            <h1>¿Quieres saber más de mis ambiciones?</h1>
-            <button id="boton-saber-mas"><span>Saber más</span></button>
-            <article>
+            <h1>Do you want to know what my ambitions are?</h1>
+            <button id="boton-saber-mas"onclick="mostrarElemento()"><span>Read More</span></button>
+            <article id="oculto">
+                <p>
+                        Within the field of computer science I have a great curiosity and
+                        enthusiasm about how artificial intelligences work and work and all
+                        kinds of technologies aimed at improving people's lives.
+                </p>
+                <img src="assets/img/inteligencia-artificial.png" alt="ia">
             </article>
         </section>
+        <script>
+            function mostrarElemento() {
+                var elemento = document.getElementById("oculto");
+                if (elemento.style.display === "none") {
+                    elemento.style.display = "block";
+                } else {
+                    elemento.style.display = "none";
+                }
+            }
+        </script>
     </main>
 </body>
 </html>
