@@ -25,7 +25,6 @@ nav {
 
 nav img {
     width: 6%;
-
     border-radius: 50%;
     padding: 1%;
 }
@@ -166,6 +165,7 @@ header .foto_header {
 
 #aprendizaje article img {
     transition: 1s ease;
+    width: 120%;
 }
 
 #aprendizaje article img:hover{
@@ -247,36 +247,45 @@ footer a{
 footer article i{
     font-size: 2em;
     margin-right: 15%;
+    transition: 0.5s;
 }
 
-@media (max-width: 1150px) {
+footer article i:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
     .checkbtn {
         display: flex;
-        align-items: center;
-        height: fit-content;
         margin-top: 3%;
         margin-right: 3%;
         float: right;
     }
 
+    nav img{
+        width: 8%;
+    }
+
     nav ul {
         position: fixed;
+        flex-direction: column;
         width: 100%;
-        background-color: #2c3e50;
-        top: 8%;
-        left: -100%;
+        background-color: #E7EDEB;
+        top: 9%;
+        right: -100%;
         text-align: center;
         transition: all .5s ease;
     }
 
     nav ul li {
         display: block;
-        margin: 5%;
+        margin: 2%;
         line-height: 30px;
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 1.2em;
     }
 
     a:hover {
@@ -284,14 +293,22 @@ footer article i{
         color: black;
     }
 
-    #check:checked~ul {
-        left: 0;
+    #check:checked~ul{
+        right: 0;
     }
 
     #nombre {
         font-size: 2em;
         font-family: Manjari;
         width: 90%;
+    }
+
+    #inicio article img{
+        width: 70%;
+    }
+
+    footer article{
+        width: 50%;
     }
 }
 
@@ -307,15 +324,54 @@ footer article i{
     }
 
     nav .checkbtn {
-        font-size: 1.5em;
+        font-size: 1.7em;
         margin-top: 3%;
     }
 
     nav ul {
-        margin-top: 0;
+        top: 8%;
     }
 
     nav ul li a {
         font-size: 1em;
+    }
+
+    #inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #inicio article:first-child{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #inicio article img{
+        width: 50%;
+        margin-top: 0;
+    }
+
+    #aprendizaje article ul li img{
+        width: 70%;
+    }
+
+    #ambiciones h1{
+        text-align: center;
+    }
+
+    #ambiciones article{
+        font-size: 1.5em;
+    }
+
+    footer ul li{
+        font-size: 0.8em;
+    }
+
+    footer article i{
+        font-size: 1.5em;
+        justify-content: center;
+        margin-right: 8%;
+        margin-top: 8%;
     }
 }
