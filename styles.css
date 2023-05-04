@@ -155,7 +155,8 @@ header .foto_header {
     font-size: 2em;
 }
 
-#aprendizaje h2, h3{
+#aprendizaje h2, 
+#aprendizaje h3{
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -377,6 +378,11 @@ footer article i:hover{
 
     #aprendizaje article ul li img{
         width: 70%;
+    }
+
+    #aprendizaje h2,
+    #aprendizaje h3{
+        font-size: 1em;
     }
 
     #ambiciones h1{
