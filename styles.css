@@ -158,7 +158,7 @@ header .foto_header {
 #aprendizaje h2, 
 #aprendizaje h3{
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: hue 5s infinite linear;
 }
